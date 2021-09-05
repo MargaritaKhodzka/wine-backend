@@ -1,0 +1,2 @@
+class NRate < ApplicationRecord
+end

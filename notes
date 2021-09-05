@@ -1,0 +1,19 @@
+wine:
+date date
+name string
+type string
+year integer
+shop string
+price decimal
+
+wine has_many rates
+
+n_rate
+grade float
+wine_id
+
+m_rate
+grade float
+wine_id
+
+rate belongs_to wine

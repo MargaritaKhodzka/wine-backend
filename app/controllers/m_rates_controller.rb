@@ -1,2 +1,0 @@
-class MRatesController < ApplicationController
-end

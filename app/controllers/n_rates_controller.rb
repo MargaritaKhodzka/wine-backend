@@ -1,2 +1,0 @@
-class NRatesController < ApplicationController
-end

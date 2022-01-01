@@ -2,6 +2,13 @@ class Api::V1::NRatesController < ApplicationController
 
   before_action :set_wine
 
+  def index
+    if @wine
+      @n_rates = @wine.n_rates
+    end
+      render json: @n_rates
+  end
+
   def show
     @n_rate = @wine.n_rates.find_by(id: params[:id])
     render json: @n_rate

@@ -26,6 +26,6 @@ class Api::V1::WinesController < ApplicationController
   private
 
   def wine_params
-    params.require(:wine).permit(:date, :name, :description, :year, :shop, :price)
+    params.require(:wine).permit(:date, :name, :description, :year, :shop, :price, :n_rate, :m_rate)
   end
 end

@@ -13,7 +13,9 @@ wine_list = Wine.create([
     description: 'Orange - Skin Contact',
     year: 2018,
     shop: 'Discovery Wine',
-    price: 26.00
+    price: 26.00,
+    n_rate: 8,
+    m_rate: 4
   },
 
   {
@@ -22,7 +24,9 @@ wine_list = Wine.create([
     description: 'White - Unfiltered',
     year: 2019,
     shop: 'Nolita Wine',
-    price: 18.00
+    price: 18.00,
+    n_rate: 7,
+    m_rate: 7
   },
 
   {
@@ -31,7 +35,9 @@ wine_list = Wine.create([
     description: 'White',
     year: 2019,
     shop: 'Amsterdam Wine Co',
-    price: 25.00
+    price: 25.00,
+    n_rate: 6.5,
+    m_rate: 9
   },
 
   {
@@ -40,7 +46,9 @@ wine_list = Wine.create([
     description: 'Orange - Skin Contact',
     year: 2020,
     shop: 'Amsterdam Wine Co',
-    price: 20.00
+    price: 20.00,
+    n_rate: 7,
+    m_rate: 6.5
   },
 
   {
@@ -49,7 +57,9 @@ wine_list = Wine.create([
     description: 'White',
     year: 2020,
     shop: 'Amsterdam Wine Co',
-    price: 17.00
+    price: 17.00,
+    n_rate: 7.5,
+    m_rate: 9
   },
 
   {
@@ -58,7 +68,9 @@ wine_list = Wine.create([
     description: 'White - Light Skin Contact',
     year: 2018,
     shop: 'Nolita Wine',
-    price: 30.00
+    price: 30.00,
+    n_rate: 7.5,
+    m_rate: 7
   },
 
   {
@@ -67,7 +79,9 @@ wine_list = Wine.create([
     description: 'White - Mucadet',
     year: 2018,
     shop: 'Seattle',
-    price: 19.00
+    price: 19.00,
+    n_rate: 5,
+    m_rate: 5
   },
 
   {
@@ -76,7 +90,9 @@ wine_list = Wine.create([
     description: 'White - Light Skin Contact',
     year: 2017,
     shop: 'Seattle',
-    price: 34.00
+    price: 34.00,
+    n_rate: 8,
+    m_rate: 9.5
   },
 
   {
@@ -85,7 +101,9 @@ wine_list = Wine.create([
     description: 'White - Dry',
     year: 2019,
     shop: 'Seattle',
-    price: 17.00
+    price: 17.00,
+    n_rate: 6.5,
+    m_rate: 9
   },
 
   {
@@ -94,7 +112,9 @@ wine_list = Wine.create([
     description: 'Orange - Skin Contact',
     year: 2018,
     shop: 'Discovery Wine',
-    price: 26.00
+    price: 26.00,
+    n_rate: 8,
+    m_rate: 5
   },
 
   {
@@ -103,120 +123,8 @@ wine_list = Wine.create([
     description: 'White',
     year: 2019,
     shop: 'Enoteca LIC',
-    price: 45.00
-  }
-])
-
-m_rates = MRate.create([
-  {
-    grade: 4,
-    wine_id: 1
-  },
-
-  {
-    grade: 7,
-    wine_id: 2
-  },
-
-  {
-    grade: 9,
-    wine_id: 3
-  },
-
-  {
-    grade: 6.5,
-    wine_id: 4
-  },
-
-  {
-    grade: 9,
-    wine_id: 5
-  },
-
-  {
-    grade: 7,
-    wine_id: 6
-  },
-
-  {
-    grade: 5,
-    wine_id: 7
-  },
-
-  {
-    grade: 9.5,
-    wine_id: 8
-  },
-
-  {
-    grade: 9,
-    wine_id: 9
-  },
-
-  {
-    grade: 5,
-    wine_id: 10
-  },
-
-  {
-    grade: 10,
-    wine_id: 11
-  }
-])
-
-n_rates = NRate.create([
-  {
-    grade: 8,
-    wine_id: 1
-  },
-
-  {
-    grade: 7,
-    wine_id: 2
-  },
-
-  {
-    grade: 6.5,
-    wine_id: 3
-  },
-
-  {
-    grade: 7,
-    wine_id: 4
-  },
-
-  {
-    grade: 7.5,
-    wine_id: 5
-  },
-
-  {
-    grade: 7.5,
-    wine_id: 6
-  },
-
-  {
-    grade: 5,
-    wine_id: 7
-  },
-
-  {
-    grade: 8,
-    wine_id: 8
-  },
-
-  {
-    grade: 6.5,
-    wine_id: 9
-  },
-
-  {
-    grade: 8,
-    wine_id: 10
-  },
-
-  {
-    grade: 8.5,
-    wine_id: 11
+    price: 45.00,
+    n_rate: 8.5,
+    m_rate: 10
   }
 ])

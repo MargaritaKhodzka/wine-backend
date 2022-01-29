@@ -10,24 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_05_182526) do
+ActiveRecord::Schema.define(version: 2022_01_29_185550) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "m_rates", force: :cascade do |t|
-    t.integer "wine_id"
-    t.float "grade"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "n_rates", force: :cascade do |t|
-    t.integer "wine_id"
-    t.float "grade"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
 
   create_table "wines", force: :cascade do |t|
     t.date "date"
@@ -38,6 +24,8 @@ ActiveRecord::Schema.define(version: 2021_09_05_182526) do
     t.decimal "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "n_rate"
+    t.float "m_rate"
   end
 
 end

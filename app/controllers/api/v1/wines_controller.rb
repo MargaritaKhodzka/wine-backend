@@ -1,4 +1,5 @@
 class Api::V1::WinesController < ApplicationController
+
   def index
     @wines = Wine.all
     render json: @wines
@@ -21,6 +22,7 @@ class Api::V1::WinesController < ApplicationController
   def destroy
     @wine = Wine.find(params[:id])
     @wine.destroy
+    render json: @wine
   end
 
   private

@@ -327,4 +327,24 @@ wine_list = Wine.create([
     n_rate: 7.5,
     m_rate: 7
   },
+  {
+    date: '2022-02-10',
+    name: 'Bodrog Bormuhely - Dry Tokaj',
+    description: 'White - Dry',
+    year: 2019,
+    shop: 'Amsterdam Wine Co',
+    price: 20,
+    n_rate: 5.5,
+    m_rate: 7
+  },
+  {
+    date: '2022-02-11',
+    name: 'Barone Di Villagrande Etna Bianco',
+    description: 'White',
+    year: 2019,
+    shop: 'Amsterdam Wine Co',
+    price: 23,
+    n_rate: 6.5,
+    m_rate: 8
+  },
 ])

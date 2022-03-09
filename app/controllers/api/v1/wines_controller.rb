@@ -1,4 +1,5 @@
 class Api::V1::WinesController < ApplicationController
+  before_action :find_wine, only: [:show, :update, :destroy]
 
   def index
     @wines = Wine.all
@@ -15,12 +16,17 @@ class Api::V1::WinesController < ApplicationController
   end
 
   def show
-    @wine = Wine.find(params[:id])
     render json: @wine
   end
 
+  def update
+    if @wine.update(wine_params)
+      @wine.save
+      render json: @wine
+    end
+  end
+
   def destroy
-    @wine = Wine.find(params[:id])
     @wine.destroy
     render json: @wine
   end
@@ -29,5 +35,9 @@ class Api::V1::WinesController < ApplicationController
 
   def wine_params
     params.require(:wine).permit(:date, :name, :description, :year, :shop, :price, :n_rate, :m_rate)
+  end
+
+  def find_wine
+    @wine = Wine.find(params[:id])
   end
 end
